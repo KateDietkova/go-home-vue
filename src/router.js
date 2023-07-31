@@ -17,7 +17,7 @@ const routes = [
     name: "homepage",
   },
   {
-    path: "/go-home-vue/apartments/:id",
+    path: "/apartments/:id",
     component: Apartment,
     name: "apartments",
     meta: {
@@ -26,7 +26,7 @@ const routes = [
   },
 
   {
-    path: "/go-home-vue/my-orders",
+    path: "/my-orders",
     component: MyOrdersPage,
     name: "my-orders",
     meta: {
@@ -34,7 +34,7 @@ const routes = [
     },
   },
   {
-    path: "/go-home-vue/login",
+    path: "/login",
     component: LoginPage,
     name: "login-page",
 
@@ -44,7 +44,7 @@ const routes = [
   },
 
   {
-    path: "/go-home-vue/register",
+    path: "/register",
     component: RegistrationPage,
     name: "register-page",
     meta: {
@@ -53,14 +53,14 @@ const routes = [
   },
 
   {
-    path: "/go-home-vue/:pathMatch(.*)*",
+    path: "/:pathMatch(.*)*",
     component: ErrorPage,
     name: "error-page",
   },
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory("/go-home-vue/"),
   routes: routes,
 });
 
