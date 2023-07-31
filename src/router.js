@@ -12,12 +12,12 @@ const MyOrdersPage = () => import("./pages/MyOrders.vue");
 
 const routes = [
   {
-    path: "/",
+    path: "/go-home-vue",
     component: Homepage,
     name: "homepage",
   },
   {
-    path: "/apartments/:id",
+    path: "/go-home-vue/apartments/:id",
     component: Apartment,
     name: "apartments",
     meta: {
@@ -26,7 +26,7 @@ const routes = [
   },
 
   {
-    path: "/my-orders",
+    path: "/go-home-vue/my-orders",
     component: MyOrdersPage,
     name: "my-orders",
     meta: {
@@ -34,7 +34,7 @@ const routes = [
     },
   },
   {
-    path: "/login",
+    path: "/go-home-vue/login",
     component: LoginPage,
     name: "login-page",
 
@@ -44,7 +44,7 @@ const routes = [
   },
 
   {
-    path: "/register",
+    path: "/go-home-vue/register",
     component: RegistrationPage,
     name: "register-page",
     meta: {
@@ -53,7 +53,7 @@ const routes = [
   },
 
   {
-    path: "/:pathMatch(.*)*",
+    path: "/go-home-vue/:pathMatch(.*)*",
     component: ErrorPage,
     name: "error-page",
   },
